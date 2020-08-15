@@ -34,6 +34,7 @@
       max-width: 260px;
       padding: 15px;
       margin: auto;
+      background-color:#d41c6c;
     }
   
   </style>
@@ -51,16 +52,16 @@
   <br>
   <div class="login-form">
     
-    <input type="text" class=" mb-2 mr-sm-2" placeholder="Correo"/><br>
+    <input id="user" type="text" class=" mb-2 mr-sm-2"  placeholder="Correo" required/><br>
     
-    <input type="password" class=" mb-2 mr-sm-2" placeholder="Contraseña"/>
+    <input id="pass" type="password" class=" mb-2 mr-sm-2 needs-validation"  placeholder="Contraseña" required/>
     <br>
     <label>
         <input type="checkbox" value="Recordar"> Recuérdame
     </label>
     <br>
     
-    <input type="button" value="Iniciar Sesión" class="btn btn-primary btnLogin" onclick=location.href="index.html">
+    <button id="btn1" type="submit"  class="btn btn-primary btnLogin" >Iniciar Sesión</button>
     
   </div>
 
