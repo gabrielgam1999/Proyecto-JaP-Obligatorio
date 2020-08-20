@@ -11,11 +11,11 @@ document.getElementById("btn1").addEventListener("click", function (e) {
         
         if (document.getElementById("user").value.length == 0)
         {
-            document.getElementById("user").style.borderColor = 'red'; // como se escribe en JS
+            document.getElementById("user").style.borderColor = 'red'; 
             document.getElementById("user").style.backgroundColor = 'pink';
         } else
         {
-            document.getElementById("user").style.removeProperty('border-color'); // Como se escribe en CSS
+            document.getElementById("user").style.removeProperty('border-color'); 
             document.getElementById("user").style.removeProperty('background-color');
         }
 
@@ -25,7 +25,7 @@ document.getElementById("btn1").addEventListener("click", function (e) {
             document.getElementById("pass").style.backgroundColor = 'pink';
         } else
         {
-            document.getElementById("pass").style.removeProperty('border-color'); // Como se escribe en CSS
+            document.getElementById("pass").style.removeProperty('border-color'); 
             document.getElementById("pass").style.removeProperty('background-color');
         }
     }
