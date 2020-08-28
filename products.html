@@ -18,12 +18,12 @@
 <body>
   <nav class="site-header sticky-top py-1 bg-dark">
     <div class="container d-flex flex-column flex-md-row justify-content-between">
-      <a class="py-2 d-none d-md-inline-block" href="index.html">Inicio</a>
+      <a class="py-2 d-none d-md-inline-block" href="home.html">Inicio</a>
       <a class="py-2 d-none d-md-inline-block" href="categories.html">Categorías</a>
       <a class="py-2 d-none d-md-inline-block" href="products.html">Productos</a>
       <a class="py-2 d-none d-md-inline-block" href="sell.html">Vender</a>
       <a class="py-2 d-none d-md-inline-block" href="cart.html">Mi carrito</a>
-      <a class="py-2 d-none d-md-inline-block" href="login.html">Login</a>
+      <a id="log" class="py-2 d-none d-md-inline-block" href="index.html">Login</a>
     </div>
   </nav>
   <div class="text-center p-4">
@@ -39,9 +39,9 @@
         <div class="form-inline flex-nowrap mr-3 mr-sm-4 pb-3">
           <label class=" text-nowrap mr-2" for="sorting">Ordenar por:</label>
           <select class="form-control custom-select" id="ordenar">
-            <option id="Relevancia">Relevancia</option>
-            <option id="Precio_Mas_Bajo">Precio mas bajo</option>
-            <option id="Precio_Mas_Alto">Precio mas alto</option>
+            <option value="1">Relevancia</option>
+            <option value="2">Precio mas bajo</option>
+            <option value="3">Precio mas alto</option>
             
           </select>
         </div>
@@ -52,7 +52,7 @@
         <div class="row container p-0 m-0">
           
           <div class="col">
-            <p class="font-weight-normal text-right my-2">Precio.</p>
+            <p class="font-weight-normal text-right my-2">Precio</p>
           </div>
           <div class="col">
             <input class="form-control" type="number" placeholder="min." id="rangeFilterPriceMin">

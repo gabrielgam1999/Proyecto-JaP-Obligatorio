@@ -5,8 +5,12 @@ window.addEventListener('load', function() {
 });
 document.getElementById("btn1").addEventListener("click", function (e) {
     if (document.getElementById("user").value.length != 0 && document.getElementById("pass").value.length != 0) {
-
-        return location.href = "index.html";
+        var username = document.getElementById("user");
+        localStorage.setItem("username",username.value);
+      // document.all("log").innerHTML =  localStorage.getItem("username");
+      
+    // console.log(localStorage.getItem("username"));
+   return location.href = "index.html";
     } else {
         
         if (document.getElementById("user").value.length == 0)
@@ -29,7 +33,8 @@ document.getElementById("btn1").addEventListener("click", function (e) {
             document.getElementById("pass").style.removeProperty('background-color');
         }
     }
+  
 });
     
 
-
+    

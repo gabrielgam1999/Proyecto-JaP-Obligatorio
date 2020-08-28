@@ -88,16 +88,28 @@ document.addEventListener("DOMContentLoaded", function (e) {
             //showProductList();
         }
     });
-    document.getElementById("Precio_Mas_Alto").addEventListener("change", function(){
-        sortAndShowProducts(ORDER_ASC_BY_PRICE);
-    });
-
-    document.getElementById("Precio_Mas_Bajo").addEventListener("change", function(){
-        sortAndShowProducts(ORDER_DESC_BY_PRICE);
-    });
-
-    document.getElementById("Relevancia").addEventListener("change", function(){
-        sortAndShowProducts(ORDER_BY_DESC_REL);
+    document.getElementById("ordenar").addEventListener("change", function () {
+       // sortAndShowProducts(ORDER_ASC_BY_PRICE);
+        var e = document.getElementById("ordenar");
+        var val = e.options[e.selectedIndex].value;
+      switch (val) {
+          case "1":
+            sortAndShowProducts(ORDER_BY_DESC_REL);
+            
+              break;
+            case "2": 
+            sortAndShowProducts(ORDER_ASC_BY_PRICE);
+            
+                break;
+            case "3":
+                sortAndShowProducts(ORDER_DESC_BY_PRICE);
+                
+                break;
+          default:
+            sortAndShowProducts(ORDER_ASC_BY_PRICE);
+           
+              break;
+      }
     });
         
         document.getElementById("clearRangeFilterPrice").addEventListener("click", function(){
