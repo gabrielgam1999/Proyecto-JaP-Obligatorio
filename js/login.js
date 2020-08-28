@@ -10,7 +10,7 @@ document.getElementById("btn1").addEventListener("click", function (e) {
       // document.all("log").innerHTML =  localStorage.getItem("username");
       
     // console.log(localStorage.getItem("username"));
-   return location.href = "index.html";
+   return location.href = "home.html";
     } else {
         
         if (document.getElementById("user").value.length == 0)
