@@ -1,6 +1,8 @@
 const ORDER_ASC_BY_PRICE = "Precio_Mas_Alto";
 const ORDER_DESC_BY_PRICE = "Precio_Mas_Bajo";
 const ORDER_BY_DESC_REL = "Relevancia";
+const buscador = document.querySelector("#buscador");
+const btnSearch = document.querySelector("#btnSearch");
 var currentProductArray = [];
 var currentSortCriteriaP = undefined;
 var minPrice = undefined;
@@ -144,5 +146,16 @@ document.addEventListener("DOMContentLoaded", function (e) {
     
             showProductList();
         });
+        const filtrar = ()=>{
+           // console.log(buscador.value);
+           const texto = buscador.value.toLowerCase();
+           for(let art of product.name){
+               let name =art.name.toLowerCase();
+               if(name.indexOf(texto) !== -1){
+
+               }
+           }
+        }
+        btnSearch.addEventListener('click',filtrar)
     });
 
