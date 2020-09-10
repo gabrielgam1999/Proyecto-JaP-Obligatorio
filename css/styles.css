@@ -139,3 +139,151 @@ a.custom-card:hover {
 .checked {
   color: orange;
 }
+.bg-black {
+  background-color: #000
+}
+
+.navbar-brand {
+  padding: 11px 20px;
+  
+}
+
+.active {
+  background-color: blue
+}
+
+.navbar-nav {
+  width: 100%;
+ 
+}
+
+.nav-link  {
+  color: #fff !important
+}
+
+.nav-item {
+  padding: 6px 12px;
+  text-align: center
+}
+
+#log {
+  color: #fff;
+ 
+ padding: 8px;
+}
+.right  {
+  margin-left: auto
+}
+
+.navbar-collapse.collapse.in {
+  display: block !important
+}
+
+@media (max-width: 992px) {
+  .right {
+      margin-left: 0
+  }
+  #log {
+    margin-left: 0
+  }
+  .nav-item {
+      width: 100%;
+      text-align: left
+  }
+}
+.stars i {
+  color: #f6d151
+}
+
+.stars span {
+  font-size: 13px
+}
+
+
+
+.badge {
+  padding: 5px !important;
+  padding-bottom: 6px !important
+}
+
+.badge i {
+  font-size: 10px
+}
+
+.profile-image {
+  width: 35px
+}
+
+.comment-ratings i {
+  font-size: 13px
+}
+
+.username {
+  font-size: 12px
+}
+
+.comment-profile {
+  line-height: 17px
+}
+
+.date span {
+  font-size: 12px
+}
+
+.p-ratings i {
+  color: #f6d151;
+  font-size: 12px
+}
+.comment-ratings i {
+  color: #f6d151
+}
+.box {
+  width: 500px;
+  padding: 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background: #191919;
+  ;
+  text-align: center;
+  transition: 0.25s;
+  margin-top: 100px
+}
+
+.box input[type="text"],
+.box input[type="password"] {
+  border: 0;
+  background: none;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  border: 2px solid #3498db;
+  padding: 10px 10px;
+  width: 250px;
+  outline: none;
+  color: white;
+  border-radius: 24px;
+  transition: 0.25s
+}
+
+.box h1 {
+  color: white;
+  text-transform: uppercase;
+  font-weight: 500
+}
+
+.box input[type="text"]:focus,
+.box input[type="password"]:focus {
+  width: 300px;
+  border-color: #2ecc71
+}
+
+.checked {
+  color: #f6d151;
+}
+
+#starz {
+  font-size: 13px;
+  text-align: start;
+}
+
