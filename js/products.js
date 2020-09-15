@@ -47,21 +47,32 @@ function showProductList() {
             ((maxPrice == undefined) || (maxPrice != undefined && parseInt(product.cost) <= maxPrice))){
 
         htmlContentToAppend += `
-            <a href="product-info.html" class="list-group-item list-group-item-action">
-                <div class="row">
-                    <div class="col-3">
-                        <img src="` + product.imgSrc + `" alt="` + product.description + `" class="img-thumbnail">
-                    </div>
-                    <div class="col">
-                        <div class="d-flex w-100 justify-content-between">
-                            <h4 class="mb-1">`+ product.name +` - `+ product.currency +`  `+ product.cost +`</h4>
-                            
-                            <small class="text-muted">` + product.soldCount + ` artículos</small>
-                        </div>
-                        <p class="mb-1">` + product.description + `</p>
-                    </div>
-                </div>
-            </a>
+        <div class="container py-5">
+
+        <div class="row">
+        <div class="col-lg-8 mx-auto">
+            
+            <ul class="list-group shadow">
+                
+                <li class="list-group-item">
+                    
+                    <div class="media align-items-lg-center flex-column flex-lg-row p-3">
+                        <div class="media-body order-2 order-lg-1">
+                            <h5 class="mt-0 font-weight-bold mb-2">`+ product.name +`</h5>
+                            <p class="font-italic text-muted mb-0 small">` + product.description + `</p>
+                            <div class="d-flex align-items-center justify-content-between mt-1">
+                                <h6 class="font-weight-bold my-2">`+ product.currency +`  `+ product.cost +`</h6>
+                                <ul class="list-inline small">
+                                <a class="btn btn-outline-primary btn-sm" href="product-info.html" data-abc="true">Ver Informacion</a>
+                                </ul>
+                            </div>
+                        </div><img src="` + product.imgSrc + `" alt="Generic placeholder image" width="200" class="ml-lg-5 order-1 order-lg-2">
+                    </div> 
+                </li> 
+                </ul>
+        </div>
+    </div>
+</div>
             `;
 
             }
@@ -84,10 +95,12 @@ function sortAndShowProducts(sortCriteria, productsArray){
 
 
 document.addEventListener("DOMContentLoaded", function (e) {
-    getJSONData(PRODUCTS_AWS_URL).then(function (resultObj) {
+    getJSONData(PRODUCTS_URL).then(function (resultObj) {
+      
         if (resultObj.status === "ok") {
+         
             sortAndShowProducts(ORDER_ASC_BY_PRICE, resultObj.data);
-            //showProductList();
+            
         }
     });
     document.getElementById("ordenar").addEventListener("change", function () {
@@ -146,7 +159,7 @@ document.addEventListener("DOMContentLoaded", function (e) {
     
             showProductList();
         });
-        const filtrar = ()=>{
+      /*  const filtrar = ()=>{
            // console.log(buscador.value);
            const texto = buscador.value.toLowerCase();
            for(let art of product.name){
@@ -156,6 +169,8 @@ document.addEventListener("DOMContentLoaded", function (e) {
                }
            }
         }
-        btnSearch.addEventListener('click',filtrar)
+        btnSearch.addEventListener('click',filtrar) */
+       
+      
     });
 

@@ -24,8 +24,19 @@
                 <li class="nav-item"> <a class="nav-link" href="categories.html">Categorías</a> </li>
                 <li class="nav-item"> <a class="nav-link" href="products.html">Productos</a> </li>
                 <li class="nav-item"> <a class="nav-link" href="sell.html">Vender</a> </li>
-                <li class="nav-item "> <a class="nav-link" href="cart.html">Mi carrito</a> </li>
-                <li  class="nav-item right "> <a id="log" class="nav-link" href="index.html">Login</a> </li>
+                <li  class="nav-item right ">  
+                  <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="log" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                      <a class="dropdown-item" href="cart.html">Mi carrito</a>
+                      <a class="dropdown-item" href="my-profile.html">Mi Perfil</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="index.html">Cerrar Sesión</a>
+                    </div>
+                  </div>
+                </li>
             </ul>
         </div>
     </nav>
@@ -37,8 +48,8 @@
 
   <div class="container p-5">
     
-    <input type="text" id="buscador" class="form-control my-2">
-    <button class=" btn btn-info mb-2" id="btnSearch">Buscar</button>
+    <div class="search"> <input type="text" id="buscador" class="form-control my-2"> <button class=" btn btn-info mb-2" id="btnSearch"><span class="fa fa-search"></span> Buscar</button></div>
+  
   
     <div class="row justify-content-end">
     
@@ -81,9 +92,10 @@
       </div>
 
     </div>
-    <div id="product-list-container">
+ 
+  </div>
+  <div id="product-list-container">
 
-    </div>
   </div>
   <footer class="text-muted bg-light">
     <div class="container">

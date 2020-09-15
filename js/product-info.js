@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function (e) {
         var productInfo = {};
         if (resultObj.status === "ok") {
             productInfo = resultObj.data;
-            let related = productInfo.relatedProducts;
+           
             let ProductNameHTML = document.getElementById("ProductName");
             let ProductCostHTML = document.getElementById("cost");
             let ProductDescriptionHTML = document.getElementById("ProductDescription");
@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", function (e) {
                 RelatedProductArray = resultObj.data;
                 let htmlContent = "";
                 let relatedIndice = productInfo.relatedProducts;
-                //  console.log(related);
+               
                 for (i = 0; i < relatedIndice.length; i++) {
                     let indice = relatedIndice[i];
 
@@ -61,6 +61,8 @@ document.addEventListener("DOMContentLoaded", function (e) {
                 }
             }
         });
+        
+        
     });
 
     getJSONData(PRODUCT_INFO_COMMENTS_URL).then(function (resultObj) {

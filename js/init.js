@@ -47,4 +47,6 @@ var getJSONData = function (url) {
 document.addEventListener("DOMContentLoaded", function (e) {
  
   document.getElementById("log").innerHTML = localStorage.getItem("username");
+
+  
 });
