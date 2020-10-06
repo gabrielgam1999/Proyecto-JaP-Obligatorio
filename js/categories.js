@@ -45,7 +45,7 @@ function showCategoriesList() {
 
             htmlContentToAppend += `
             <div class="container mt-100">
-    <div class="row">
+    <div class="row row-flex">
         <div class="col-md-4 col-sm-6">
             <div class="card mb-30"><a class="card-img-tiles" href="#" data-abc="true">
                     <div class="inner">

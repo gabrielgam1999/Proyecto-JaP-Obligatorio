@@ -47,6 +47,8 @@ var getJSONData = function (url) {
 document.addEventListener("DOMContentLoaded", function (e) {
  
   document.getElementById("log").innerHTML = localStorage.getItem("username");
-
+  document.getElementById("out").addEventListener("click", function (e) {
+    document.getElementById("log") = localStorage.removeItem("username");
+});
   
 });
