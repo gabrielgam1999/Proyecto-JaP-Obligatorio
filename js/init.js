@@ -1,7 +1,7 @@
 const CATEGORIES_URL = "https://japdevdep.github.io/ecommerce-api/category/all.json";
 const PUBLISH_PRODUCT_URL = "https://japdevdep.github.io/ecommerce-api/product/publish.json";
 const CATEGORY_INFO_URL = "https://japdevdep.github.io/ecommerce-api/category/1234.json";
-const PRODUCTS_URL = "https://japdevdep.github.io/ecommerce-api/product/all.json";
+const PRODUCTS_URL = "http://axelalza.duckdns.org/getProductos";
 const PRODUCTS_AWS_URL = "https://ec2-18-191-222-30.us-east-2.compute.amazonaws.com:3000/product/";
 const PRODUCT_INFO_URL = "https://japdevdep.github.io/ecommerce-api/product/5678.json";
 const PRODUCT_INFO_COMMENTS_URL = "https://aalza.pythonanywhere.com/getJSON";
@@ -48,7 +48,7 @@ document.addEventListener("DOMContentLoaded", function (e) {
  
   document.getElementById("log").innerHTML = localStorage.getItem("username");
   document.getElementById("out").addEventListener("click", function (e) {
-    document.getElementById("log") = localStorage.removeItem("username");
+    localStorage.removeItem("username");
 });
   
 });
