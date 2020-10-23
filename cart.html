@@ -3,311 +3,555 @@
 <html lang="en">
 
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <title>eMercado - Todo lo que busques está aquí</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <title>eMercado - Todo lo que busques está aquí</title>
 
-  <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/album/">
-  <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/album/">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
 
-  <link href="https://fonts.googleapis.com/css?family=Raleway:300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
 
-  <style>
-    * {
-    margin: 0;
-    padding: 0;
-    -webkit-font-smoothing: antialiased;
-    -webkit-text-shadow: rgba(0, 0, 0, .01) 0 0 1px;
-    text-shadow: rgba(0, 0, 0, .01) 0 0 1px
-}
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            -webkit-font-smoothing: antialiased;
+            -webkit-text-shadow: rgba(0, 0, 0, .01) 0 0 1px;
+            text-shadow: rgba(0, 0, 0, .01) 0 0 1px
+        }
 
-body {
-    font-family: 'Rubik', sans-serif;
-    font-size: 14px;
-    font-weight: 400;
-    background: #E0E0E0;
-    color: #000000
-}
+        body {
+            font-family: 'Rubik', sans-serif;
+            font-size: 14px;
+            font-weight: 400;
+            background: #E0E0E0;
+            color: #000000
+        }
 
-ul {
-    list-style: none;
-    margin-bottom: 0px
-}
+        ul {
+            list-style: none;
+            margin-bottom: 0px
+        }
 
-.button {
-    display: inline-block;
-    background: #0e8ce4;
-    border-radius: 5px;
-    height: 48px;
-    -webkit-transition: all 200ms ease;
-    -moz-transition: all 200ms ease;
-    -ms-transition: all 200ms ease;
-    -o-transition: all 200ms ease;
-    transition: all 200ms ease
-}
+        .button {
+            display: inline-block;
+            background: #0e8ce4;
+            border-radius: 5px;
+            height: 48px;
+            -webkit-transition: all 200ms ease;
+            -moz-transition: all 200ms ease;
+            -ms-transition: all 200ms ease;
+            -o-transition: all 200ms ease;
+            transition: all 200ms ease
+        }
 
-.button a {
-    display: block;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 48px;
-    color: #FFFFFF;
-    padding-left: 35px;
-    padding-right: 35px
-}
+        .button a {
+            display: block;
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 48px;
+            color: #FFFFFF;
+            padding-left: 35px;
+            padding-right: 35px
+        }
 
-.button:hover {
-    opacity: 0.8
-}
+        .button:hover {
+            opacity: 0.8
+        }
 
-.cart_section {
-    width: 100%;
-    padding-top: 93px;
-    padding-bottom: 111px
-}
+        .cart_section {
+            width: 100%;
+            padding-top: 93px;
+            padding-bottom: 111px
+        }
 
-.cart_title {
-    font-size: 30px;
-    font-weight: 500
-}
+        .cart_title {
+            font-size: 30px;
+            font-weight: 500
+        }
 
-.cart_items {
-    margin-top: 8px
-}
+        .cart_items {
+            margin-top: 8px
+        }
 
-.cart_list {
-    border: solid 1px #e8e8e8;
-    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
-    background-color: #fff
-}
+        .cart_list {
+            border: solid 1px #e8e8e8;
+            box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
+            background-color: #fff
+        }
 
-.cart_item {
-    width: 100%;
-    padding: 15px;
-    padding-right: 46px
-}
+        .cart_item {
+            width: 100%;
+            padding: 15px;
+            padding-right: 46px
+        }
 
-.cart_item_image {
-    width: 133px;
-    height: 133px;
-    float: left
-}
+        .cart_item_image {
+            width: 133px;
+            height: 133px;
+            float: left
+        }
 
-.cart_item_image img {
-    max-width: 100%
-}
+        .cart_item_image img {
+            max-width: 100%
+        }
 
-.cart_item_info {
-    width: calc(100% - 133px);
-    float: left;
-    padding-top: 18px
-}
+        .cart_item_info {
+            width: calc(100% - 133px);
+            float: left;
+            padding-top: 18px
+        }
 
-.cart_item_name {
-    margin-left: 7.53%
-}
+        .cart_item_name {
+            margin-left: 7.53%
+        }
 
-.cart_item_title {
-    font-size: 14px;
-    font-weight: 400;
-    color: rgba(0, 0, 0, 0.5)
-}
+        .cart_item_title {
+            font-size: 14px;
+            font-weight: 400;
+            color: rgba(0, 0, 0, 0.5)
+        }
 
-.cart_item_text {
-    font-size: 18px;
-    margin-top: 35px
-}
+        .cart_item_text {
+            font-size: 18px;
+            margin-top: 35px
+        }
 
-.cart_item_text span {
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    margin-right: 11px;
-    -webkit-transform: translateY(4px);
-    -moz-transform: translateY(4px);
-    -ms-transform: translateY(4px);
-    -o-transform: translateY(4px);
-    transform: translateY(4px)
-}
+        .cart_item_text span {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            margin-right: 11px;
+            -webkit-transform: translateY(4px);
+            -moz-transform: translateY(4px);
+            -ms-transform: translateY(4px);
+            -o-transform: translateY(4px);
+            transform: translateY(4px)
+        }
 
-.cart_item_price {
-    text-align: right
-}
+        .cart_item_price {
+            text-align: right
+        }
 
-.cart_item_total {
-    text-align: right
-}
+        .cart_item_total {
+            text-align: right
+        }
 
-.order_total {
-    width: 100%;
-    height: 60px;
-    margin-top: 30px;
-    border: solid 1px #e8e8e8;
-    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
-    padding-right: 46px;
-    padding-left: 15px;
-    background-color: #fff
-}
+        .order_total {
+            width: 100%;
+            height: 60px;
+            margin-top: 30px;
+            border: solid 1px #e8e8e8;
+            box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
+            padding-right: 46px;
+            padding-left: 15px;
+            background-color: #fff
+        }
 
-.order_total_title {
-    display: inline-block;
-    font-size: 14px;
-    color: rgba(0, 0, 0, 0.5);
-    line-height: 60px
-}
+        .order_total_title {
+            display: inline-block;
+            font-size: 14px;
+            color: rgba(0, 0, 0, 0.5);
+            line-height: 60px
+        }
 
-.order_total_amount {
-    display: inline-block;
-    font-size: 18px;
-    font-weight: 500;
-    margin-left: 26px;
-    line-height: 60px
-}
+        .order_total_amount {
+            display: inline-block;
+            font-size: 18px;
+            font-weight: 500;
+            margin-left: 26px;
+            line-height: 60px
+        }
 
-.cart_buttons {
-    margin-top: 60px;
-    text-align: right
-}
+        .cart_buttons {
+            margin-top: 60px;
+            text-align: right
+        }
 
-.cart_button_clear {
-    display: inline-block;
-    border: none;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 48px;
-    color: rgba(0, 0, 0, 0.5);
-    background: #FFFFFF;
-    border: solid 1px #b2b2b2;
-    padding-left: 35px;
-    padding-right: 35px;
-    outline: none;
-    cursor: pointer;
-    margin-right: 26px
-}
+        .cart_button_clear {
+            display: inline-block;
+            border: none;
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 48px;
+            color: rgba(0, 0, 0, 0.5);
+            background: #FFFFFF;
+            border: solid 1px #b2b2b2;
+            padding-left: 35px;
+            padding-right: 35px;
+            outline: none;
+            cursor: pointer;
+            margin-right: 26px
+        }
 
-.cart_button_clear:hover {
-    border-color: #0e8ce4;
-    color: #0e8ce4
-}
+        .cart_button_clear:hover {
+            border-color: #0e8ce4;
+            color: #0e8ce4
+        }
 
-.cart_button_checkout {
-    display: inline-block;
-    border: none;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 48px;
-    color: #FFFFFF;
-    padding-left: 35px;
-    padding-right: 35px;
-    outline: none;
-    cursor: pointer;
-    vertical-align: top
-}
+        .cart_button_checkout {
+            display: inline-block;
+            border: none;
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 48px;
+            color: #FFFFFF;
+            padding-left: 35px;
+            padding-right: 35px;
+            outline: none;
+            cursor: pointer;
+            vertical-align: top
+        }
 
-.count {
-    width: 30%;
-}
-  </style>
-  <link href="css/bootstrap.min.css" rel="stylesheet">
-  <link href="css/styles.css" rel="stylesheet">
-  <link href="css/dropzone.css" rel="stylesheet">
+        .count {
+            width: 30%;
+        }
+    </style>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+    <link href="css/dropzone.css" rel="stylesheet">
 </head>
 
 <body>
-  <div class="container-fluid px-0 sticky-top">
-    <nav class="navbar navbar-expand-lg navbar-dark site-header sticky-top bg-black py-0 px-0"> <a class="navbar-brand" href="home.html"><strong><i>e-Mercado</i></strong></a> <button class="navbar-toggler mr-3" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item"> <a class="nav-link" href="home.html">Inicio</a> </li>
-                <li class="nav-item"> <a class="nav-link" href="categories.html">Categorías</a> </li>
-                <li class="nav-item"> <a class="nav-link" href="products.html">Productos</a> </li>
-                <li class="nav-item"> <a class="nav-link" href="sell.html">Vender</a> </li>
-                <li  class="nav-item right ">  
-                  <div class="dropdown">
-                    <button class="btn btn-secondary dropdown-toggle" type="button" id="log" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      
-                    </button>
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                      <a class="dropdown-item" href="cart.html">Mi carrito<i class="fas fa-shopping-cart"></i></a>
-                        <a class="dropdown-item" href="my-profile.html">Mi Perfil <i class="fas fa-user-circle"></i></a>
-                        <div class="dropdown-divider"></div>
-                        <a id="out" class="dropdown-item" href="index.html">Cerrar Sesión <i class="fas fa-sign-out-alt"></i></a>
-                    </div>
-                  </div>
-                </li>
-            </ul>
-        </div>
-    </nav>
-</div>
-<div class="cart_section">
-  <div class="container-fluid">
-      <div class="row">
-          <div class="col-lg-10 offset-lg-1">
-              <div class="cart_container">
-                  <div class="cart_title">Carro de Compras</div>
-                  <div class="cart_items">
-                      <ul class="cart_list">
-                          <li class="cart_item clearfix">
-                              <div id="carroImagen" class="cart_item_image"></div>
-                              <div class="cart_item_info d-flex flex-md-row flex-column justify-content-between">
-                                  <div class="cart_item_name cart_info_col">
-                                      <div class="cart_item_title">Nombre</div>
-                                      <div id="carroNombre" class="cart_item_text"></div>
-                                  </div>
-                                 
-                                  <div class="cart_item_quantity cart_info_col">
-                                      <div class="cart_item_title">Cantidad</div>
-                                      <div id="carroCantidad" class="cart_item_text"></div>
-                                  </div>
-                                  <div class="cart_item_quantity cart_info_col">
-                                    <div class="cart_item_title">Cost. Envio</div>
-                                    <div id="carroEnvio" class="cart_item_text">0</div>
-                                </div>
-                                  <div class="cart_item_quantity cart_info_col">
-                                    <div class="cart_item_title">Moneda</div>
-                                    <div id="carroMoneda" class="cart_item_text"></div>
-                                </div>
-                                  <div class="cart_item_price cart_info_col">
-                                      <div class="cart_item_title">Precio</div>
-                                      <div id="carroPrecio" class="cart_item_text"></div>
-                                  </div>
-                                  <div class="cart_item_total cart_info_col">
-                                      <div class="cart_item_title">Total</div>
-                                      <div id="carroTotal" class="cart_item_text"></div>
-                                  </div>
-                              </div>
-                          </li>
-                      </ul>
-                  </div>
-                  <div class="order_total">
-                      <div class="order_total_content text-md-right">
-                          <div class="order_total_title">Costo Total:</div>
-                          <div id="carroTotalFinal" class="order_total_amount"></div>
-                      </div>
-                  </div>
-                  <div class="cart_buttons"> <button type="button" class="button cart_button_clear">Continuar Comprando</button>  </div>
-              </div>
-          </div>
-      </div>
-  </div>
-</div>
-  </div>
-  <div id="spinner-wrapper">
-    <div class="lds-ring">
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
+    <div class="container-fluid px-0 sticky-top">
+        <nav class="navbar navbar-expand-lg navbar-dark site-header sticky-top bg-black py-0 px-0"> <a
+                class="navbar-brand" href="home.html"><strong><i>e-Mercado</i></strong></a> <button
+                class="navbar-toggler mr-3" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span
+                    class="navbar-toggler-icon"></span> </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"> <a class="nav-link" href="home.html">Inicio</a> </li>
+                    <li class="nav-item"> <a class="nav-link" href="categories.html">Categorías</a> </li>
+                    <li class="nav-item"> <a class="nav-link" href="products.html">Productos</a> </li>
+                    <li class="nav-item"> <a class="nav-link" href="sell.html">Vender</a> </li>
+                    <li class="nav-item right ">
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="log"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="cart.html">Mi carrito<i
+                                        class="fas fa-shopping-cart"></i></a>
+                                <a class="dropdown-item" href="my-profile.html">Mi Perfil <i
+                                        class="fas fa-user-circle"></i></a>
+                                <div class="dropdown-divider"></div>
+                                <a id="out" class="dropdown-item" href="index.html">Cerrar Sesión <i
+                                        class="fas fa-sign-out-alt"></i></a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
     </div>
-  </div>
-  <script src="js/jquery-3.4.1.min.js"></script>
-  <script src="js/bootstrap.bundle.min.js"></script>
-  <script src="js/dropzone.js"></script>
-  <script src="js/init.js"></script>
-  <script src="js/cart.js"></script>
+    <div class="cart_section">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-10 offset-lg-1">
+                    <div class="cart_container" id="carro">
+                        <div class="cart_title">Carrito de Compras</div>
+                        <div class="cart_items">
+                            <ul class="cart_list">
+                                <li class="cart_item clearfix">
+                                    <div id="carroImagen" class="cart_item_image"></div>
+                                    <div class="cart_item_info d-flex flex-md-row flex-column justify-content-between">
+                                        <div class="cart_item_name cart_info_col">
+                                            <div class="cart_item_title">Nombre</div>
+                                            <div id="carroNombre" class="cart_item_text"></div>
+                                        </div>
+
+                                        <div class="cart_item_quantity cart_info_col">
+                                            <div class="cart_item_title">Cantidad</div>
+                                            <div id="carroCantidad" class="cart_item_text"></div>
+                                        </div>
+                                        <div class="cart_item_quantity cart_info_col">
+                                            <div class="cart_item_title">Cost. Envio</div>
+                                            <p id="carroEnvio" class="cart_item_text"></p>
+                                        </div>
+                                        <div class="cart_item_quantity cart_info_col">
+                                            <div class="cart_item_title">Moneda</div>
+                                            <div id="carroMoneda" class="cart_item_text"></div>
+                                        </div>
+                                        <div class="cart_item_price cart_info_col">
+                                            <div class="cart_item_title">Precio</div>
+                                            <div id="carroPrecio" class="cart_item_text"></div>
+                                        </div>
+                                        <div class="cart_item_total cart_info_col">
+                                            <div class="cart_item_title">SubTotal</div>
+                                            <p id="carroTotal" class="cart_item_text"></p>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="order_total">
+                            <div class="order_total_content text-md-right">
+                                <div class="order_total_title">Costo Total(+ envio):</div>
+                                <div id="carroTotalFinal" class="order_total_amount"></div>
+                            </div>
+                            <h5>Tipo de envio:</h5>
+                            <div class="radio">
+                                <label><input type="radio" name="optradio" checked>Premium (2-5 días)</label>
+                            </div>
+                            <div class="radio">
+                                <label><input type="radio" name="optradio">Express (5-8 días)</label>
+                            </div>
+                            <div class="radio">
+                                <label><input type="radio" name="optradio" checked>Standard (12 a 15 días)</label>
+                            </div>
+                        </div>
+                        <div class="cart_buttons"> <button type="button" id="redirect"
+                                class="button cart_button_clear">Continuar Comprando</button> <button type="button"
+                                class="button cart_button_checkout" data-toggle="modal"
+                                data-target="#exampleModal">Finalizar compra.</button> </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="exampleModalLabel">Datos de Envio:</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <table class="table table-striped" style="font-weight: bold;">
+
+                        <tr>
+                            <td style="width: 175px;">
+                                <label for="id_first_name">Nombre:</label></td>
+                            <td>
+                                <input class="form-control" id="id_first_name" name="first_name" required="required"
+                                    type="text" style="width: 320px;" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="width: 175px;">
+                                <label for="id_last_name">Apellido:</label></td>
+                            <td>
+                                <input class="form-control" id="id_last_name" name="last_name" required="required"
+                                    type="text" style="width: 320px;" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="width: 175px;">
+                                <label for="id_address_line_1">Direccion:</label></td>
+                            <td>
+                                <input class="form-control" id="id_address_line_1" name="address_line_1"
+                                    required="required" type="text" style="width: 320px;" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="width: 175px;">
+                                <label for="id_address_line_2">Numero:</label></td>
+                            <td>
+                                <input class="form-control" id="id_address_line_2" name="address_line_2" type="text"
+                                    style="width: 320px;" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="width: 175px;">
+                                <label for="id_city">Ciudad:</label></td>
+                            <td>
+                                <input class="form-control" id="id_city" name="city" required="required" type="text"
+                                    style="width: 320px;" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="width: 175px;">
+                                <label for="id_state">Departamento:</label></td>
+                            <td>
+                                <select class="form-control" id="id_state" name="state" style="width: 120px;">
+                                    <option value="AK">Artigas</option>
+                                    <option value="AL">Canelones</option>
+                                    <option value="AZ">Cerro Largo</option>
+                                    <option value="AR">Colonia</option>
+                                    <option value="CA">Durazno</option>
+                                    <option value="CO">Flores</option>
+                                    <option value="CT">Florida</option>
+                                    <option value="DE">Lavalleja</option>
+                                    <option value="FL">Maldonado</option>
+                                    <option value="GA">Montevideo</option>
+                                    <option value="HI">Paysandu</option>
+                                    <option value="ID">Rio Negro</option>
+                                    <option value="IL">Rivera</option>
+                                    <option value="IN">Rocha</option>
+                                    <option value="IA">Salto</option>
+                                    <option value="KS">San Jose</option>
+                                    <option value="KY">Soriano</option>
+                                    <option value="LA">Tacuarembo</option>
+                                    <option value="ME">Treinta y tres</option>
+
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="width: 175px;">
+                                <label for="id_postalcode">Codigo Postal:</label></td>
+                            <td>
+                                <input class="form-control" id="id_postalcode" name="postalcode" required="required"
+                                    type="text" style="width: 320px;" />
+                            </td>
+                        </tr>
+
+
+                    </table>
+                </div>
+                <h5>Tipo de pago:</h5>
+                <div class="accordion" id="accordionExample">
+                    <div class="card">
+                        <div class="card-header" id="headingOne">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse"
+                                    data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    Tarjeta de Credito
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                            data-parent="#accordionExample">
+                            <div class="card-body">
+                                <script
+                                    src="https://cdnjs.cloudflare.com/ajax/libs/jquery.payment/3.0.0/jquery.payment.min.js"></script>
+                                <div class="padding">
+                                    <div class="row">
+                                        <div class="container-fluid d-flex justify-content-center">
+                                            <div class="col-sm-8 col-md-6">
+                                                <div class="card">
+                                                    <div class="card-header">
+                                                        <div class="row">
+                                                            <div class="col-md-6"> <span>TARJETA CREDITO/DEBITO</span>
+                                                            </div>
+                                                            <div class="col-md-6 text-right" style="margin-top: -5px;">
+                                                                <img
+                                                                    src="https://img.icons8.com/color/36/000000/visa.png">
+                                                                <img
+                                                                    src="https://img.icons8.com/color/36/000000/mastercard.png">
+                                                                <img
+                                                                    src="https://img.icons8.com/color/36/000000/amex.png">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card-body" style="height: 350px">
+                                                        <div class="form-group"> <label for="cc-number"
+                                                                class="control-label">NUMERO TARJETA</label> <input
+                                                                id="cc-number" type="tel"
+                                                                class="input-lg form-control cc-number"
+                                                                autocomplete="cc-number"
+                                                                placeholder="•••• •••• •••• ••••" required> </div>
+                                                        <div class="row">
+                                                            <div class="col-md-6">
+                                                                <div class="form-group"> <label for="cc-exp"
+                                                                        class="control-label">VENCIMIENTO</label> <input
+                                                                        id="cc-exp" type="tel"
+                                                                        class="input-lg form-control cc-exp"
+                                                                        autocomplete="cc-exp" placeholder="•• / ••"
+                                                                        required> </div>
+                                                            </div>
+                                                            <div class="col-md-6">
+                                                                <div class="form-group"> <label for="cc-cvc"
+                                                                        class="control-label"> CVC</label> <input
+                                                                        id="cc-cvc" type="tel"
+                                                                        class="input-lg form-control cc-cvc"
+                                                                        autocomplete="off" placeholder="••••" required>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group"> <label for="numeric"
+                                                                class="control-label">NOMBRE</label>
+                                                            <input type="text" class="input-lg form-control"> </div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingTwo">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link btn-block text-left collapsed" type="button"
+                                    data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
+                                    aria-controls="collapseTwo">
+                                    Paypal
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+                            data-parent="#accordionExample">
+                            <div class="card-body">
+                                <h6 class="pb-2"> <strong>Selecciona tu tipo de cuenta paypal</strong></h6>
+                        <div class="form-group "> <label class="radio-inline"> <input type="radio" name="optradio" checked>Nacional </label> <label class="radio-inline"> <input type="radio" name="optradio" class="ml-5">Internacional </label></div>
+                        <p> <button type="button" class="btn btn-primary " onclick="window.location.href='https://www.paypal.com/signin'"><i class="fab fa-paypal mr-2"></i> Iniciar sesion en Paypal</button> </p>
+                        <p class="text-muted"> Nota: Después de hacer clic en el botón, se le dirigirá a una plataforma segura para el pago. Después de completar el proceso de pago, se le redirigirá de nuevo a la página web para ver los detalles de su pedido. </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingThree">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link btn-block text-left collapsed" type="button"
+                                    data-toggle="collapse" data-target="#collapseThree" aria-expanded="false"
+                                    aria-controls="collapseThree">
+                                    Banco
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                            data-parent="#accordionExample">
+                            <div class="card-body">
+                                <div class="form-group "> <label for="Select Your Bank">
+                                    <h6>Select your Bank</h6>
+                                </label> <select class="form-control" id="ccmonth" style="width: 250px;">
+                                    <option value="" selected disabled>--Selecciona tu Banco--</option>
+                                    <option>B.R.O.U</option>
+                                    <option>BBVA</option>
+                                    <option>Banco Santander</option>
+                                    <option>Banco Bandes</option>
+                                    <option>Banco Itaú</option>
+                                    
+                                </select> </div>
+                           
+                            <p class="text-muted">Note: After clicking on the button, you will be directed to a secure gateway for payment. After completing the payment process, you will be redirected back to the website to view details of your order. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn btn-primary" onclick="window.location.href='https://www.youtube.com/watch?v=6n3pFFPSlW4'">Confirmar Pago</button>
+                  </div>
+            </div>
+            
+        </div>
+    </div>
+    <div id="spinner-wrapper">
+        <div class="lds-ring">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/dropzone.js"></script>
+    <script src="js/init.js"></script>
+    <script src="js/cart.js"></script>
 </body>
 
 </html>

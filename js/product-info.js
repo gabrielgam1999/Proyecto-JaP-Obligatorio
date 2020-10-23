@@ -43,7 +43,7 @@ document.addEventListener("DOMContentLoaded", function (e) {
                     
                     
                     <a href="product-info.html" >
-                    <div class="row row-flex col-md-6">
+                    <div class="row row-flex col-md-4">
                     <div class="card" style="width: 10rem;">
                     <img class="card-img-top" src="` + prueba.imgSrc + `" alt="Card image cap"></a>
                     <div class="card-body">
