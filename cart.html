@@ -271,7 +271,7 @@
                                             <div id="carroCantidad" class="cart_item_text"></div>
                                         </div>
                                         <div class="cart_item_quantity cart_info_col">
-                                            <div class="cart_item_title">Cost. Envio</div>
+                                            <div class="cart_item_title">Cost. Envio($)</div>
                                             <p id="carroEnvio" class="cart_item_text"></p>
                                         </div>
                                         <div class="cart_item_quantity cart_info_col">
@@ -283,9 +283,10 @@
                                             <div id="carroPrecio" class="cart_item_text"></div>
                                         </div>
                                         <div class="cart_item_total cart_info_col">
-                                            <div class="cart_item_title">SubTotal</div>
+                                            <div class="cart_item_title">SubTotal($)</div>
                                             <p id="carroTotal" class="cart_item_text"></p>
                                         </div>
+                                      
                                     </div>
                                 </li>
                             </ul>
@@ -297,19 +298,19 @@
                             </div>
                             <h5>Tipo de envio:</h5>
                             <div class="radio">
-                                <label><input type="radio" name="optradio" checked>Premium (2-5 días)</label>
+                                <label><input type="radio" name="optradio" id="premium">Premium (2-5 días)</label>
                             </div>
                             <div class="radio">
-                                <label><input type="radio" name="optradio">Express (5-8 días)</label>
+                                <label><input type="radio" name="optradio" id="express">Express (5-8 días)</label>
                             </div>
                             <div class="radio">
-                                <label><input type="radio" name="optradio" checked>Standard (12 a 15 días)</label>
+                                <label><input type="radio" name="optradio" id="standard">Standard (12 a 15 días)</label>
                             </div>
                         </div>
                         <div class="cart_buttons"> <button type="button" id="redirect"
                                 class="button cart_button_clear">Continuar Comprando</button> <button type="button"
                                 class="button cart_button_checkout" data-toggle="modal"
-                                data-target="#exampleModal">Finalizar compra.</button> </div>
+                                data-target="#exampleModal" id="checkout">Finalizar compra.</button> </div>
                     </div>
                 </div>
             </div>
@@ -496,7 +497,7 @@
                             <div class="card-body">
                                 <h6 class="pb-2"> <strong>Selecciona tu tipo de cuenta paypal</strong></h6>
                         <div class="form-group "> <label class="radio-inline"> <input type="radio" name="optradio" checked>Nacional </label> <label class="radio-inline"> <input type="radio" name="optradio" class="ml-5">Internacional </label></div>
-                        <p> <button type="button" class="btn btn-primary " onclick="window.location.href='https://www.paypal.com/signin'"><i class="fab fa-paypal mr-2"></i> Iniciar sesion en Paypal</button> </p>
+                        <p> <button  type="button" class="btn btn-primary " onclick="window.location.href='https://www.paypal.com/signin'" target="_blank"><i class="fab fa-paypal mr-2"></i> Iniciar sesion en Paypal</button> </p>
                         <p class="text-muted"> Nota: Después de hacer clic en el botón, se le dirigirá a una plataforma segura para el pago. Después de completar el proceso de pago, se le redirigirá de nuevo a la página web para ver los detalles de su pedido. </p>
                             </div>
                         </div>
@@ -515,7 +516,7 @@
                             data-parent="#accordionExample">
                             <div class="card-body">
                                 <div class="form-group "> <label for="Select Your Bank">
-                                    <h6>Select your Bank</h6>
+                                    <h6>Seleccion el Banco</h6>
                                 </label> <select class="form-control" id="ccmonth" style="width: 250px;">
                                     <option value="" selected disabled>--Selecciona tu Banco--</option>
                                     <option>B.R.O.U</option>
@@ -533,7 +534,7 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-                    <button type="button" class="btn btn-primary" onclick="window.location.href='https://www.youtube.com/watch?v=6n3pFFPSlW4'">Confirmar Pago</button>
+                    <button id="btnCompra" type="button" class="btn btn-primary" onclick="window.location.href='https://www.youtube.com/watch?v=6n3pFFPSlW4'" target="_blank">Confirmar Pago</button>
                   </div>
             </div>
             
