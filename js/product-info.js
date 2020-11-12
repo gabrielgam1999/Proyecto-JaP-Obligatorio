@@ -99,7 +99,7 @@ document.addEventListener("DOMContentLoaded", function (e) {
    
 document.getElementById("btnComment").addEventListener("click", function (e) {
     var http = new XMLHttpRequest();
-    var url = "http://aalza.pythonanywhere.com/saveJSON";
+    var url = "https://aalza.pythonanywhere.com/saveJSON";
     
     var e = document.getElementById("nroStar");
     var valor = e.options[e.selectedIndex].value;
