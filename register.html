@@ -7,8 +7,8 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
-    <title>eMercado - Todo lo que busques está aquí</title>
-
+    <title>¡ Registrate !</title>
+    <link rel="icon" type="image/png" href="img/logo.png">
     <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/album/">
     <link href="css/font-awesome.min.css" rel="stylesheet">
 
@@ -90,34 +90,32 @@
                 <div class="col-md-6">
                     <div class="form">
                         <h2>Registro</h2>
-                        <div class="inputbox mt-3"> <span>Primer Nombre</span> <input type="text" placeholder="Nombre"
+                        <div class="inputbox mt-3"> <span>Nombre</span> <input type="text" id="nombre" placeholder="Nombre"
                                 name="" class="form-control"> </div>
-                        <div class="inputbox mt-3"> <span>Segundo Nombre</span> <input type="text" placeholder="Nombre"
-                                name="" class="form-control"> </div>
-                        <div class="inputbox mt-3"> <span>Primer Apellido</span> <input type="text"
-                                placeholder="Apellido" name="" class="form-control"> </div>
-                        <div class="inputbox mt-3"> <span>Segundo Apellido</span> <input type="text"
-                                placeholder="Apellido" name="" class="form-control"> </div>
-                        <div class="inputbox mt-3"> <span>Email</span> <input type="text" placeholder="Email" name=""
+                        
+                        <div class="inputbox mt-3"> <span>Apellido</span> <input type="text"
+                            id="apellido" placeholder="Apellido" name="" class="form-control"> </div>
+                                <div class="inputbox mt-3"> <span>Fecha Nacimiento</span> <input type="date"
+                                    placeholder="Fecha Nacimiento" name="" id="nacimiento" class="form-control"> </div>
+                        <div class="inputbox mt-3"> <span>Email</span> <input type="text" placeholder="Email" name="" id="correo"
                                 class="form-control"> </div>
-                        <div class="inputbox mt-3"> <span>Contraseña</span> <input type="text" placeholder="Contraseña"
+                        <div class="inputbox mt-3"> <span>Contraseña</span> <input type="password" placeholder="Contraseña" id="contra"
                                 name="" class="form-control"> </div>
                         <div class="inputbox mt-3"> <span>Telefono</span> <input type="text" name=""
-                                class="form-control"> </div>
+                            id="tel"  class="form-control" placeholder="Telefono"> </div>
                         <div class="d-flex justify-content-between align-items-center">
                             <div class="text-right"> <button
-                                    class="btn btn-success register btn-block">Registrar</button> </div> <a
-                                href="index.html" class="login">Iniciar Sesion</a>
+                                    class="btn btn-success register btn-block" id="btnSingup">Registrar</button> </div> <a
+                                href="index.html"  class="login">Iniciar Sesion</a>
                         </div>
+                        <div id="alertax"></div>
                         <div class="form-check mt-2"> <input class="form-check-input" type="checkbox" value=""
                                 id="flexCheckChecked" checked> <label class="form-check-label" for="flexCheckChecked">
                                 Estoy de acuerdo con los términos y condiciones de <a href="" class="login">Privacidad y
                                     Política</a> </label> </div>
                     </div>
                 </div>
-                <div class="col-md-6">
-                    <div class="text-center mt-5"> <img src="https://i.imgur.com/98GXnDD.png" width="400"> </div>
-                </div>
+               
             </div>
         </div>
     </div>
@@ -132,6 +130,7 @@
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/dropzone.js"></script>
+    <script src="js/register.js"></script>
     <script src="js/init.js"></script>
     
 </body>

@@ -7,8 +7,8 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
-  <title>eMercado - Todo lo que busques está aquí</title>
-
+  <title>Perfil</title>
+  <link rel="icon" type="image/png" href="img/logo.png">
   <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/album/">
   <link href="https://fonts.googleapis.com/css?family=Raleway:300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
 
@@ -27,6 +27,8 @@
         font-size: 3.5rem;
       }
     }
+    
+
   </style>
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <link href="css/styles.css" rel="stylesheet">
@@ -61,20 +63,92 @@
         </div>
     </nav>
 </div>
-  <div class="container p-5">
-    <div class="alert alert-danger" role="alert" style="position: relative; width:auto; top: 0;">
-      <h4 class="alert-heading">¡A trabajar! :)</h4>
-      <p>Esta sección corresponde a: Entrega 7 (Fecha de entrega: 8/11/202020) -> Punto 1 y 2.</p>
-      <hr>
-      <p class="mb-0">Para saber qué debes hacer, fijate en la actividad en CREA correspondiente a esta entrega.</p>
+  <div class="container">
+    
+    <div class="row">
+      <div class="col-md-3 border-right">
+          <div id="imagen" class="d-flex flex-column align-items-center text-center p-3 py-5"><img id="Avatar" class="rounded-circle image" src="https://w7.pngwing.com/pngs/867/694/png-transparent-user-profile-default-computer-icons-network-video-recorder-avatar-cartoon-maker-blue-text-logo.png" alt="Avatar" style="width: 200px;" ><span id="nameProfile2" class="font-weight-bold"> </span><span id="mailProfile" class="text-black-50"></span><span> </span></div>
+      </div>
+      <div class="col-md-5 border-right">
+          <div class="p-3 py-5">
+              <div class="d-flex justify-content-between align-items-center">
+                  <h3 class="text-right"><strong>Mi Perfil</strong> <button type="button" id="editar" class="btn btn-light" data-toggle="modal" data-target="#exampleModal"><i class="far fa-edit"></i></button> </h3>
+                  
+              </div>
+              <div class="row mt-2">
+                  <div class="col"><label class="labels">Nombre</label><p id="nameProfile" class="text-muted"></p></div>
+                  
+                  <div class="col-md-6"><label class="labels">Apellido</label><p id="lastnameProfile" class="text-muted"></p></div>
+              </div>
+              <div class="row mt-3">
+                  <div class="col-md-12"><label class="labels">Telefono</label><p id="phoneProfile" class="text-muted"></p></div>
+                  <div class="col-md-12"><label class="labels">Fecha de Nacimiento</label><p id="dateProfile" class="text-muted"></p></div>
+                  <div class="col-md-6"><label class="labels">Email</label><p id="mailProfile2" class="text-muted"></p></div>
+                  <div class="col-md-12"><label class="labels">Contraseña</label><p id="pwordProfile" class="text-muted">********</p></div>
+              </div>
+              
+          </div>
+      </div>
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title font-weight-bold border-right" id="exampleModalLabel">Editar Perfil</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="row">
+                
+                        <div class="row mt-2">
+                            <div class="col-md-6"><label class="labels">Nombre</label><input id="nameP" type="text" class="form-control" placeholder="Nombre" value=""></div>
+                            <div class="col-md-6"><label class="labels">Apellido</label><input id="lastnameP" type="text" class="form-control" value="" placeholder="Apellido"></div>
+                            <div class="col-md-6"><label class="labels"></label><button data-toggle="modal" data-target="#exampleModal2" type="button" id="changeProfile" class="btn btn-primary">Cambiar Avatar</button></div>
+
+                          </div>
+                        <div class="row mt-3">
+                          
+                            <div class="col-md-12"><label class="labels">Telefono</label><input id="cellP" type="text" class="form-control" placeholder="Telefono" value="" style="width: 170px;"></div>
+                            <div class="col-md-12"><label class="labels">Fecha de Nacimiento</label><input id="dateP" type="date" class="form-control"  value="" style="width: 175px;"></div>
+                            <div class="col-md-12"><label class="labels">Email </label><input id="mailP" type="text" class="form-control" placeholder="Correo" value="" style="width: 230px;"></div>
+                            <div class="col-md-12"><label class="labels">Contraseña</label><input id="passP" type="password" class="form-control" placeholder="Contraseña" value="" style="width: 230px;"></div>
+                        </div>
+                       
+                </div>
+                
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+              <button type="button" id="btnSaveNewProfile" class="btn btn-primary">Actualizar</button>
+            </div>
+            </div>
+           
+          </div>
+        </div>
+      </div>
+  </div>
+
+  <div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog"  aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <input id="funcionaPlis" type="text" class="form-control" placeholder="URL"  style="width: 230px;">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+          <button type="button" id="jaja" class="btn btn-primary">Salvar</button>
+        </div>
+      </div>
     </div>
   </div>
-  <footer class="text-muted bg-light">
-    <div class="container">
-      <p>Este sitio forma parte de Desarrollo Web - JAP - 2020</p>
-      <p>Clickea <a target="_blank" href="Letra.pdf">aquí</a> para descargar la letra del obligatorio.</p>
-    </div>
-  </footer>
+  
   <div class="alert fade alert-success" role="alert" id="alertResult">
     <span id="resultSpan"></span>
     <button type="button" class="close" data-dismiss="alert" aria-label="Close">
@@ -94,6 +168,8 @@
   <script src="js/dropzone.js"></script>
   <script src="js/init.js"></script>
   <script src="js/my-profile.js"></script>
+  
+
 </body>
 
 </html>
